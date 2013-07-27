@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- 	Jenney Grover
+		MIU 1307
+		Project 1, 2, 3, and 4
+		Your Personal Librarian
+		began June 7th, 2013
+-->
+<html lang='en'>
+	<head>
+    	<title>Add a Book</title>
+    	<meta charset="utf-8" /> 
+        <meta name="robots" content="index,follow" />
+        <!-- meta name="robots" content="noindex, nofollow" /> -->
+        <meta name="keywords" content="html5, mobile development, Full Sail University, library, books, Satchel, bookbag" />
+        <meta name="author" content="Jenney Grover" />
+        <meta name="description" content="Keep track of your library on The Satchel." />
+       	
+       	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+       	<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<!--	<meta name = "viewport" content = "width = 320, initial-scale = 0.9, user-scalable = yes"> -->
+       
+    	<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- The link for the jQuery Mobile web hosted code -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		
+		<!-- This is my css style sheet -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+	</head>
+	<body>
+	<!-- home page -->
+		<div data-role="page" id="home" data-id="navigation" >
+			
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<small>
+					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
+					Organize your books with us! 
+				</small>
+			</div>
+			
+			<a href="additem.html" data-ajax="false"><img src="images/cta.png" alt="cta"/></a>
+        	
+        	<div data-role="content" class="ui-grid-a">
+        		<!--
+        		put class="ui-hide-label" in the <div> and it will hide the label
+        		<p id="searchFunction"><input type="text" id="bookSearch" placeholder="Search for a Book!"/></p>
+        		<p><a href="error401.html" data-role="button" data-icon="search" data-iconpos="right" data-theme="d">Search</a></p>
+        		-->
+        		
+        		<label for="search-basic">Search:</label>
+				<input type="search" name="search" id="search-basic" value="Search for a book!" />
+				<!--
+        		<label for="browse-basic">Browse Categories:</label>
+        		-->
+
+				<div class="ui-block-a"><a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/01hardcover.png" width="20" height="20"/><br />Hard</a></div>
+				<div class="ui-block-b"><a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/01paperback.png" width="20" height="20"/><br />Paper</a></div>
+				<div class="ui-block-a"><a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/01mobile.png" width="20" height="20"/><br />Mobile</a></div>
+				<div class="ui-block-b"><a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/01audio.png" width="20" height="20"/><br />Audio</a></div>
+				<div class="ui-block-a"><a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/01series.png" width="20" height="20"/><br />Series</a></div>
+				<div class="ui-block-b"><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/01galaxyalt.png" width="20" height="20"/><br />Want</a></div>
+				
+        	</div>
+        		
+        	<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" class="ui-btn-active" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
+	<!-- info page -->
+		<div data-role="page" id="info">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<small>
+					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
+					Your Personal Librarian 
+				</small>
+			</div>
+   			<div data-role="content">
+   				<p>
+        			<a href="#credits" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/03copyright.png"/>   Credits</a>
+        			<!-- <a href="../bronze/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/03cupcake.png"/>   Bronze App</a> -->
+        			<a href="http://o61839.github.io/MIU_week2/bronze/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-rel="external"><img src="images/03cupcake.png"/>   Bronze gh-pages</a>
+        			<a href="../gold/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-ajax="false"><img src="images/03honeycomb.png"/>   Gold App</a>
+        			<a href="http://o61839.github.io/MIU_week2/gold/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-rel="external"><img src="images/03honeycomb.png"/>   Gold gh-pages</a>
+        			<a href="https://github.com/o61839/MIU_week2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d" data-rel="external"><img src="images/03github.png"/>   GitHub Repo</a>
+        		</p>
+   				<h6>&copy 2013 Duffer Design. All Rights Reserved.<h6>
+   			</div> 
+   			 <div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" class="ui-btn-active" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+	<!-- credits page -->
+		<div data-role="page" id="credits">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<small>
+					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
+					Your Personal Librarian 
+				</small>
+			</div>
+   			<div data-role="content">
+   				<p>
+        			I'd like to thank Mr. Kyle Kauck
+        			for being my coding buddy
+        			through this process!
+        			This app would not be what
+        			it is today without you!
+        			THANK YOU! 	
+        		</p>
+        		<br />
+        		<p>
+        			Thank you to jQueryMobile for the use of the icons. 
+        		</p>
+   				<h6>&copy 2013 Duffer Design. All Rights Reserved.<h6>
+   			</div> 
+   			 <div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" class="ui-btn-active" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+			
+	<!-- about page -->
+		<div data-role="page" id="about">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<small>
+					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
+					Organize your books with us! 
+				</small>
+			</div>
+   			<div data-role="content">
+   				<ul>
+   					<h3> Duffer Design </h3>
+   					<li> was founded January 2013 </li>
+   					<li> by Jenney Grover </li>
+   					<h4> Designability: </h4>
+   					<li> Photoshop </li>
+   					<li> Illustrator </li>
+   					<li> PowerPoint </li>
+   					<li> Publisher </li>
+   					<li> HTML, CSS, Javascript, jQuery Mobile </li>
+   					<h4> Follow Us: </h4>
+   				</ul>
+   				<h5>
+					<a href="https://www.facebook.com/pages/Duffer-Design/423036851109295?ref=hl" data-rel="external"><img src="images/02facebook.png"/></a> 
+					<a href="http://www.flickr.com" data-rel="external"><img src="images/02flickr.png"/></a> 
+					<a href="http://www.linkedin.com/in/jenneygrover" data-rel="external"><img src="images/02linkedin.png"/></a> 
+					<a href="http://www.pinterest.com" data-rel="external"><img src="images/02pinterest.png"/></a>
+					<a href="http://www.skype.com/en/" data-rel="external"><img src="images/02skype.png"/></a>
+					<a href="https://twitter.com/DufferDesign" data-rel="external"><img src="images/02twitter.png"/></a> 
+					<a href="https://www.youtube.com/channel/UCnEs7cF79v3grhs-grYKChQ" data-rel="external"><img src="images/02youtube.png"/></a>
+					<a href="error404.html" data-rel="external"><img src="images/02googleplus.png"/></a>
+   				</h5>
+   				<h6>&copy 2013 Duffer Design. All Rights Reserved.<h6>
+   			</div> 
+   			 <div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" class="ui-btn-active" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+		<!-- Newstream page -->
+		<div data-role="page" id="new">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<small>
+					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
+					Organize your books with us! 
+				</small>
+			</div>
+   			<div data-role="content">
+   				<ul>
+   					<h4> Newly added books: </h4>
+					<li>
+						<h3>Twilight Series</h3>
+						<h4>Twilight</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160172<br />
+							Added: 08-13-2012<br />
+							Published: 2005<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+						<h4>New Moon</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160199<br />
+							Added: 08-13-2012<br />
+							Published: 2006<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+						<h4>Eclipse</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160202<br />
+							Added: 08-13-2012<br />
+							Published: 2007<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+						<h4>Breaking Dawn</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 9780316067928<br />
+							Added: 08-13-2012<br />
+							Published: 2008<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+					</li>
+				</ul>
+   			</div> 
+   			 <div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" class="ui-btn-active" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+		<!-- Hardcover Browse -->
+		<div data-role="page" id="hardcover">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01hardcover.png"/>
+				<small>Hardcover Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>
+						<h4>Grapes of Wrath</h4>
+						<p>
+						Author: John Steinbeck<br />
+						ISBN: 9781440637124<br />
+						Added: 11-01-1977<br />
+						Published: 1939<br />
+						Genre: novel<br />
+						Read: read<br />
+						Rate: 7<br />
+						Purchased: borrowed<br />
+						Cover: hardcover<br />
+						Type: fiction<br />
+						Comments: Better than I thought.
+						</p>
+					</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+	<!-- Paperback Browse -->
+		<div data-role="page" id="paperback">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01paperback.png"/>
+				<small>Paperback Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>
+						<h4>Fahrenheit 451</h4>
+						<p>
+						Author: Ray Bradbury<br />
+						ISBN: 9789745171067<br />
+						Added: 12-27-1988<br />
+						Published: 1953<br />
+						Genre: science fiction<br />
+						Read: read<br />
+						Rate: 10<br />
+						Purchased: purchased<br />
+						Cover: paperback<br />
+						Type: fiction<br />
+						Comments: AWESOME book.
+						</p>
+					</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+	<!-- Mobile Browse -->
+		<div data-role="page" id="mobile">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01mobile.png"/>
+				<small>Mobile Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>
+						<h4>To Kill a Mockingbird</h4>
+						<p>
+						Author: Harper Lee<br />
+						ISBN: 9780397001514<br />
+						Added: 06-13-2010<br />
+						Published: 1988<br />
+						Genre: drama<br />
+						Read: unread<br />
+						Rate: 6<br />
+						Purchased: purchased<br />
+						Cover: mobile<br />
+						Type: fiction<br />
+						Comments: Great book.
+						</p>
+					</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
+		<!-- Audio Browse -->
+		<div data-role="page" id="audio">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01audio.png"/>
+				<small>Audio Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>
+						<h4>No audio books found</h4>
+						<!-- <h4>Grapes of Wrath</h4>
+						<p>
+						Author: John Steinbeck<br />
+						ISBN: 9781440637124<br />
+						Added: 11-01-1977<br />
+						Published: 1939<br />
+						Genre: novel<br />
+						Read: read<br />
+						Rate: 7<br />
+						Purchased: borrowed<br />
+						Cover: hardcover<br />
+						Type: fiction<br />
+						Comments: Better than I thought.
+						</p> -->
+					</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
+		<!-- Series Browse -->
+		<div data-role="page" id="series">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01series.png"/>
+				<small>Series
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>
+						<h3>Twilight Series</h3>
+						<h4>Twilight</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160172<br />
+							Added: 08-13-2012<br />
+							Published: 2005<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+						<h4>New Moon</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160199<br />
+							Added: 08-13-2012<br />
+							Published: 2006<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+						<h4>Eclipse</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160202<br />
+							Added: 08-13-2012<br />
+							Published: 2007<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+						<h4>Breaking Dawn</h4>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 9780316067928<br />
+							Added: 08-13-2012<br />
+							Published: 2008<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+							</p>
+					</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" data-ajax="false">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
+		<!-- The link for the jQuery Mobile web hosted code -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		
+		<!-- This is my js style sheet -->
+		<script src="js/main.js" type="text/javascript"></script>
+		
+	</body>
+</html>

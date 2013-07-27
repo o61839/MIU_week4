@@ -1,0 +1,200 @@
+/* 
+	Jenney Grover
+	MIU 1307
+	Your Personal Librarian
+	Project 1, 2, 3, 4
+	began June 7, 2013
+*/
+
+body{font-family:Bookman, Courier, Verdana; width: 480px; margin: auto; padding: 10px; color: #47006B; background: #C1C1C1; font-size: 1.3pc;}
+#content{width: 480px; height: 690px; overflow: scroll;}
+/*FEFFD9 -- background*/
+/* does having this width and height change the html dimensions listed previously? */
+
+header {
+	margin-top: 5px; 
+	font-size: 14px;
+	text-align: left; 
+}
+
+h1 {
+	margin: 10px 15px; 
+	text-align: center; 
+	color: #47006B;
+}
+
+h2 {
+	margin: 12px 15px; 
+	text-align: center; 
+	color: #47006B; 
+}
+
+h3 {
+	margin: 12px 15px; 
+	text-align: left; 
+	color: #47006B; 
+}
+
+big {
+	color: #E87600;
+}
+
+small {
+	text-align: right;
+}
+
+span {
+	/*font-variant: small-caps;*/ 
+	font-size: 18px; 
+	/*color: #990071;*/
+}
+
+p {
+	color: #47006B; 
+	margin: 10px;
+	text-align: left;
+	/*font-variant: small-caps;*/ 
+	line-height: 1.3em; 
+	text-indent: 10px; 
+}
+
+a {
+	color: #990071;
+	margin: 8px; 
+	font-size: 16px; 
+}
+
+legend {
+	color: #2D006B; 
+	font-weight: bold; 
+}
+
+form {
+	padding: 10px;
+	border-style: double; 
+	border-color: #2D006B;
+	border: 3px solid; 
+	border-radius: 25px; 
+	background: #FEFFD9; 
+	/*EEE5FF -- form color*/
+}
+
+#bookSearch.left {
+	float: left;
+	text-align: left; 
+}
+
+li {
+	margin: 8px; 
+	font-family: Verdana;
+	font-size: 0.9pc
+}
+
+select {
+	margin: -40px; 
+}
+
+ul {
+	display: block;
+	border: 0px solid #90bade; 
+}
+
+ul li {
+	list-style-type:none;
+ 	border: 0px solid black; 
+}
+
+ul li div 
+ {
+   border:1px solid black
+ }
+ 
+#book {
+	display: block; 
+}
+
+#errors {
+	color: red; 
+}
+
+#submitButton {
+ 	background-color: #400099;
+ 	font-size: 0.9pc;
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 		/*FEFFBF*/
+ 	width: 120px;
+ 	height: 40px;
+ 	margin-top: 5px;
+ 	margin-left: 20px; 
+ 	padding: 0;
+ 	border: 1px solid #400099;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	/*-moz-border-radius: 6px*/
+	display: inline;
+}
+
+
+#showSatchel {
+ 	background-color: #36991D;
+ 	font-size: 0.9pc;
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 	/*color: #FEFFBF; */
+ 	width: 120px;
+ 	height: 40px;
+ 	margin-top: 5px;
+ 	margin-left: 20px; 
+ 	padding: 0;
+ 	border: 1px solid #400099;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	/*-moz-border-radius: 6px*/
+	display: inline;
+}
+
+
+#emptySatchel {
+ 	background-color: #D12136;
+ 	font-size: 0.9pc;
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 	/*color: #FEFFBF; */ 
+ 	width: 120px;
+ 	height: 40px;
+ 	margin-top: 5px;
+ 	margin-left: 20px; 
+ 	padding: 0;
+ 	border: 1px solid #400099;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	/*-moz-border-radius: 6px*/
+	display: inline; 
+}
+
+#goHome {
+ 	background-color: #36991D;
+ 	font-size: 0.9pc;
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 	/*color: #FEFFBF; */ 
+ 	width: 120px;
+ 	height: 40px;
+ 	margin-top: 5px;
+ 	margin-left: 20px; 
+ 	padding: 0;
+ 	border: 1px solid #400099;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	/*-moz-border-radius: 6px*/
+	display: none;
+}
+
+footer {
+	margin-top: 5px; 
+	font-size: 8px;
+}
+
+.even{background: #fff;}
+.hasFocus{border: 2px solid #8C03FC;}

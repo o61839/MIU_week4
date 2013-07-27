@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 	Jenney Grover
+		MIU 1307
+		Project 1, 2, 3, and 4
+		Your Personal Librarian
+		begain June 7th, 2013 
+-->
+<html lang='en'>
+	<head> 
+    	<title>Add a Book</title>
+    	<meta charset="utf-8" /> 
+        <meta name="robots" content="index,follow" />
+        <!-- meta name="robots" content="noindex, nofollow" /> -->
+        <meta name="keywords" content="html5, mobile development, Full Sail University, library, books, library, bookbag" />
+        <meta name="author" content="Jenney Grover" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="description" content="Keep track of your library with Your Personal Librarian." />
+        <!-- <meta name="viewpoint" content="user-scalable=yes, width=device-width" /> -->
+    	<!-- user-scalable is a yes/no for if user is able to zoom in or not ; assume 360 px wide not 960 px--> 
+    	<!-- android dpi -->
+     	<!-- <meta name="viewport" content="target-densitydpi=device-dpi" /> -->
+    	<!-- older phones or not-so-smart phones -->
+     	<!--<meta name="HandheldFriendly" content="True" /> -->
+    	<!--<meta name="MobileOptimized" content="320" /> -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body id="mainContent">
+		<header>
+		<a name="reloadHere">
+    		<h1>"Your Personal Librarian"</h1>
+    		<h2>Add a title to your library. </h2>
+    	</a>
+		</header>
+	
+	<form action="#" method="post" id="myBookQuestions">
+		<fieldset>
+			<legend>Your book's information</legend>
+			<ul id="errors"></ul>
+			<ul id="Book">
+			<span>* fields are required
+				<li><label for="bname">* Add Book's Name:</label><br /><input type="text" id="bname" /></li>
+				<li><label for="aname">* Add Author Name(s):</label><br /><input type="text" id="aname" /></li>
+				<li>* What is the genre of the book?
+					<ul>	
+						<!-- <li id="selectGenre"><label for="genre">Add Genre:</label><br /></li> -->
+						<li id="selectGenre"></li>
+					</ul>
+				</li>
+			</span>
+				<li><label for="isbn">Enter the 10 or 13 digit ISBN:</label><br /><input type="text" id="isbn" /></li>
+				<li>What date did you add this book to your library?
+				<!-- the next line is my goal for the date...however it only works in Chrome...WHY? -->
+					<br /><input type="date" id="dateAdded"  />
+				</li>
+				<li>What date was the book published?
+				<!-- the next line is my goal for the date...however it only works in Chrome...WHY? -->
+					<br /><input type="date" id="datePublished"  />
+				</li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Optional Information</legend>
+			<ul id="questions">
+				<li>Have you read this book?
+					<ul>
+						<li><input type="radio" checked value="read" id="read" name="choice"/><label for="read">Read It</label></li>
+						<li><input type="radio" value="unread" id="unread" name="choice"/><label for="unread">Not Read Yet</label></li>
+					</ul>
+				</li>
+				<li>How would you rate this book?
+					<br /><label>1</label><input type="range" min="0" max="10" value="7" step="1" name="rating" list="rating" id="rating" /><label>10</label>
+				</li>
+				<li>Is this a permanent addition to your library?
+					<ul>
+						<li><input type="radio" checked value="purchased" id="purchased" name="permanent" </><label for="purchased">Purchased</label></li>
+						<li><input type="radio" value="borrowed" id="borrowed" name="permanent" </><label for="borrowed">Borrowed</label></li>
+					</ul>
+				</li>
+				<li>Is this book paperback, hardcover, or on a mobile device?	
+					<ul>
+				<!-- the name="cover" means that only one of the three can be selected -->
+						<li><input type="radio" checked value="paperback" id="paperback" name="cover" </><label for="paperback">Paperback</label></li>
+						<li><input type="radio" value="hardcover" id="hardcover" name="cover" </><label for="hardcover">Hardcover</label></li>
+						<li><input type="radio" value="mobile" id="mobile" name="cover" </><label for="mobile">Mobile</label></li>
+					</ul>
+				</li>
+				<li>Is this book fiction or nonfiction?
+					<ul>
+						<li><input type="radio" checked value="fiction" id="fiction" name="type" </><label for="fiction">Fiction (not true)</label></li>
+						<li><input type="radio" value="nonfiction" id="nonfiction" name="type" </><label for="nonfiction">Nonfiction (true)</label></li>
+					</ul>
+				</li>
+				<li><label for="comments">What are your comments on the book?<br /><small>Likes, Dislikes, Plot, etc.:</small></label><br /><textarea id="comments"></textarea></li>
+				<li><input type="hidden" value="true" /></li>
+			</ul>	
+		</fieldset>
+	</form>
+		<div id ="bookInfoDisplay">
+		</div>
+			<input type="button" name="goHome" id="goHome" value="Close Library"/>
+			<input type="button" name="submitButton" id="submitButton" value="Put in Library" />
+			<input type="button" name="showSatchel" id="showSatchel" value="Show Library" />
+			<input type="button" name="emptySatchel" id="emptySatchel" value="Empty Library" />
+	<footer>
+    	<small>June 6, 2013, Jenney Grover</small><br />
+    	<small>&copy 2013 Duffer Design. All Rights Reserved.</small>
+	</footer>
+		<script src="js/json.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

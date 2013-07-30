@@ -15,6 +15,7 @@ $('#formId').on('pageinit', function(){
     ;
 
 //now the branches are wonky
+//still wonky what is going on????
                 
     addBook.validate({
 	invalidHandler: function(form, validator) {

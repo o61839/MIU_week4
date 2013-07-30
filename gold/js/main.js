@@ -10,10 +10,23 @@ $('#home').on('pageinit', function(){
 	
 $('#formId').on('pageinit', function(){
 
-    var addBook = $("#gatherbooks");
+    var addBook = $("#gatherbooks"),
+    	errorsLink = $('#errorsLink')
+    ;
+    
+    //adding comment to sync commits
                 
     addBook.validate({
 	invalidHandler: function(form, validator) {
+		errorsLink.click(); 
+		var html = ' '; 
+		for (var key in validator.submitted){
+			var label = $('label[for^="'+ key +'"]').not('.error');
+			var fieldName = label.text(); 
+			html += '<li>'+ fieldName +'</li>';
+		};
+		$("#bookErrors ul").html(html); 
+		
     },
     submitHandler: function() {
 	var data = addBook.serializeArray();

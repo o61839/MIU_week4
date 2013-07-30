@@ -14,6 +14,7 @@ $('#formId').on('pageinit', function(){
     	errorsLink = $('#errorsLink')
     ;
 
+//now the branches are wonky
                 
     addBook.validate({
 	invalidHandler: function(form, validator) {

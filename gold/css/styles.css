@@ -11,6 +11,10 @@ body{font-family:Bookman, Courier, Verdana; width: 480px; margin: auto; padding:
 /*FEFFD9 -- background*/
 /* does having this width and height change the html dimensions listed previously? */
 
+#errorsLink {
+	display:none; 
+}
+
 header {
 	margin-top: 5px; 
 	font-size: 14px;

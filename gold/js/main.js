@@ -10,21 +10,23 @@ $('#home').on('pageinit', function(){
 	
 $('#formId').on('pageinit', function(){
 
-    var myForm = $('#gatherbooks');
-    myForm.validate({
-    invalidHandler: function(form, validator) {
+    var addBook = $("#gatherbooks");
+                
+    addBook.validate({
+	invalidHandler: function(form, validator) {
     },
     submitHandler: function() {
-    var data = myForm.serializeArray();
-    storeData(data);
+	var data = addBook.serializeArray();
+	storeData(data);
+	window.location.reload();
     }
     });
+    
+    
+});
 
 //any other code needed for addItem page goes here
 
-});
-	
-});
 
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
@@ -46,6 +48,6 @@ var	deleteItem = function (){
 				
 var clearLocal = function(){
 
-	};
+};
 
 

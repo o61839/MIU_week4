@@ -15,6 +15,7 @@ $('#formId').on('pageinit', function(){
     ;
     
     //adding comment to sync commits
+    //adding this one to check on sync since sync no there
                 
     addBook.validate({
 	invalidHandler: function(form, validator) {

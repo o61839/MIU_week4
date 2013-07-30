@@ -14,7 +14,7 @@ $('#formId').on('pageinit', function(){
     	errorsLink = $('#errorsLink')
     ;
     
-    
+    //adding comment to sync commits
                 
     addBook.validate({
 	invalidHandler: function(form, validator) {

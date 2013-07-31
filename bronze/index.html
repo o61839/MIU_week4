@@ -25,11 +25,11 @@
        
     	<!-- Mobile IE needs ClearType for smoothing fonts -->
 		<meta http-equiv="cleartype" content="on">
-		<!-- Themeroller -->
-		<link rel="stylesheet" href="css/cssTrial.css" />
+		
 		<!-- The link for the jQuery Mobile web hosted code -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-		
+		<!-- Themeroller -->
+		<link rel="stylesheet" href="css/cssTrial.css" type="text/css"/>
 		<!-- This is my css style sheet 
 		<link href="css/styles.css" rel="stylesheet" type="text/css" /> -->
 		
@@ -42,7 +42,7 @@
 	<!-- home page -->
 		<div data-role="page" id="home" data-id="navigation" >
 			
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
 					Organize your books with us! 
@@ -55,7 +55,7 @@
         		<!--
         		put class="ui-hide-label" in the <div> and it will hide the label
         		<p id="searchFunction"><input type="text" id="bookSearch" placeholder="Search for a Book!"/></p>
-        		<p><a href="error401.html" data-role="button" data-icon="search" data-iconpos="right" data-theme="b">Search</a></p>
+        		<p><a href="error401.html" data-role="button" data-icon="search" data-iconpos="right" data-theme="a">Search</a></p>
         		-->
         		
         		<label for="search-basic">Search:</label>
@@ -64,22 +64,22 @@
         		<label for="browse-basic">Browse Categories:</label>
         		-->
 
-				<div class="ui-block-a"><a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/01hardcover.png" width="20" height="20"/><br />Hard</a></div>
-				<div class="ui-block-b"><a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/01paperback.png" width="20" height="20"/><br />Paper</a></div>
-				<div class="ui-block-a"><a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/01mobile.png" width="20" height="20"/><br />Mobile</a></div>
-				<div class="ui-block-b"><a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/01audio.png" width="20" height="20"/><br />Audio</a></div>
-				<div class="ui-block-a"><a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/01series.png" width="20" height="20"/><br />Series</a></div>
-				<div class="ui-block-b"><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/01galaxyalt.png" width="20" height="20"/><br />Want</a></div>
+				<div class="ui-block-a"><a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/01hardcover.png" width="20" height="20"/><br />Hard</a></div>
+				<div class="ui-block-b"><a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/01paperback.png" width="20" height="20"/><br />Paper</a></div>
+				<div class="ui-block-a"><a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/01mobile.png" width="20" height="20"/><br />Mobile</a></div>
+				<div class="ui-block-b"><a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/01audio.png" width="20" height="20"/><br />Audio</a></div>
+				<div class="ui-block-a"><a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/01series.png" width="20" height="20"/><br />Series</a></div>
+				<div class="ui-block-b"><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/01galaxyalt.png" width="20" height="20"/><br />Want</a></div>
 				
         	</div>
         		
         	<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" class="ui-btn-active" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" class="ui-btn-active" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -87,7 +87,7 @@
 		
 	<!-- info page -->
 		<div data-role="page" id="info">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
 					Your Personal Librarian 
@@ -95,22 +95,22 @@
 			</div>
    			<div data-role="content">
    				<p>
-        			<a href="#credits" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/03copyright.png"/>   Credits</a>
-        			<!-- <a href="../bronze/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/03cupcake.png"/>   Bronze App</a> -->
-        			<a href="http://o61839.github.io/MIU_week4/bronze/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-rel="external"><img src="images/03cupcake.png"/>   Bronze gh-pages</a>
-        			<a href="../gold/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-ajax="false"><img src="images/03honeycomb.png"/>   Gold App</a>
-        			<a href="http://o61839.github.io/MIU_week4/gold/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-rel="external"><img src="images/03honeycomb.png"/>   Gold gh-pages</a>
-        			<a href="https://github.com/o61839/MIU_week4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-rel="external"><img src="images/03github.png"/>   GitHub Repo</a>
+        			<a href="#credits" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/03copyright.png"/>   Credits</a>
+        			<!-- <a href="../bronze/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/03cupcake.png"/>   Bronze App</a> -->
+        			<a href="http://o61839.github.io/MIU_week4/bronze/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-rel="external"><img src="images/03cupcake.png"/>   Bronze gh-pages</a>
+        			<a href="../gold/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-ajax="false"><img src="images/03honeycomb.png"/>   Gold App</a>
+        			<a href="http://o61839.github.io/MIU_week4/gold/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-rel="external"><img src="images/03honeycomb.png"/>   Gold gh-pages</a>
+        			<a href="https://github.com/o61839/MIU_week4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-rel="external"><img src="images/03github.png"/>   GitHub Repo</a>
         		</p>
    				<h6>&copy 2013 Duffer Design. All Rights Reserved.<h6>
    			</div> 
    			 <div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" class="ui-btn-active" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" class="ui-btn-active" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -118,7 +118,7 @@
 	
 	<!-- credits page -->
 		<div data-role="page" id="credits">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
 					Your Personal Librarian 
@@ -142,10 +142,10 @@
    			 <div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" class="ui-btn-active" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" class="ui-btn-active" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -153,7 +153,7 @@
 			
 	<!-- about page -->
 		<div data-role="page" id="about">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
 					Organize your books with us! 
@@ -187,10 +187,10 @@
    			 <div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" class="ui-btn-active" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" class="ui-btn-active" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -198,7 +198,7 @@
 	
 		<!-- Newstream page -->
 		<div data-role="page" id="new">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
 					Organize your books with us! 
@@ -271,10 +271,10 @@
    			 <div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" class="ui-btn-active" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" class="ui-btn-active" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -282,7 +282,7 @@
 	
 		<!-- Hardcover Browse -->
 		<div data-role="page" id="hardcover">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<img src="images/01hardcover.png"/>
 				<small>Hardcover Books 
 				</small>
@@ -310,10 +310,10 @@
 			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -321,7 +321,7 @@
 	
 	<!-- Paperback Browse -->
 		<div data-role="page" id="paperback">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<img src="images/01paperback.png"/>
 				<small>Paperback Books 
 				</small>
@@ -349,10 +349,10 @@
 			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -360,7 +360,7 @@
 	
 	<!-- Mobile Browse -->
 		<div data-role="page" id="mobile">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<img src="images/01mobile.png"/>
 				<small>Mobile Books 
 				</small>
@@ -388,10 +388,10 @@
 			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -399,7 +399,7 @@
 		
 		<!-- Audio Browse -->
 		<div data-role="page" id="audio">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<img src="images/01audio.png"/>
 				<small>Audio Books 
 				</small>
@@ -428,10 +428,10 @@
 			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -439,7 +439,7 @@
 		
 		<!-- Series Browse -->
 		<div data-role="page" id="series">
-			<div data-role="header" data-position="fixed" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="a">
 				<img src="images/01series.png"/>
 				<small>Series
 				</small>
@@ -510,10 +510,10 @@
 			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
-        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="b" data-ajax="false">Home</a></li>
-        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Info</a></li>
-        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="b" data-ajax="false">About</a></li>
-        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="false">New</a></li>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="a" data-ajax="false">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="a" data-ajax="false">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="a" data-ajax="false">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="a" data-ajax="false">New</a></li>
         			</ul>
         		</div>
         	</div>

@@ -4,5 +4,28 @@
 		began June 7, 2013
 -->
 
-These are my Git Links: 	 https://github.com/o61839/MIU_week3.git Future Weeks:  	https://github.com/o61839/MIU_week4.git Previous Weeks: 		Week One: 		http://o61839.github.io/MIU_week1/ 		https://github.com/o61839/MIU_week1.git 	Week Two: 			http://o61839.github.io/MIU_week2/gold/index.html 		http://o61839.github.io/MIU_week2/bronze/index.html 		https://github.com/o61839/MIU_week2.git 
+These are my Git Links:  
+
+	https://github.com/o61839/MIU_week4.git 
+
+Previous Weeks: 
+	
+	Week One: 
+
+		http://o61839.github.io/MIU_week1/ 
+
+		https://github.com/o61839/MIU_week1.git 
+
+	Week Two: 
+	
+		http://o61839.github.io/MIU_week2/gold/index.html 
+
+		http://o61839.github.io/MIU_week2/bronze/index.html 
+
+		https://github.com/o61839/MIU_week2.git 
+		
+	Week Three: 
+	
+		https://github.com/o61839/MIU_week3.git 
+
 

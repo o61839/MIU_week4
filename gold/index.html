@@ -596,27 +596,27 @@
 					Your Personal Librarian 
 				</small>
 			</div>
-   			<div data-role="content">
+   			<div data-role="content" data-theme="b">
    			<!--action="" method="post"-->
    				<form action="" method="post" id="gatherbooks" data-theme="b">
    					<div data-role="fieldcontain">
 						<label for="bookTitle">***Title:</label>
-						<input type="text" name="bookTitle" id="bookTitle" class="required" placeholder="e.g. Designing Interfaces"></input>
+						<input type="text" name="bookTitle" id="bookTitle" class="required" placeholder="e.g. Designing Interfaces" data-theme="b"></input>
    					</div>
    					<div data-role="fieldcontain">
 						<label for="authorName">***Author(s):</label>
-						<input type="text" name="authorName" id="authorName" class="required" placeholder="e.g. Jenifer Tidwell"></input>
+						<input type="text" name="authorName" id="authorName" class="required" placeholder="e.g. Jenifer Tidwell" data-theme="b"></input>
    					</div>
    					
    					<div data-role="fieldcontain">
 						<label for="bookISBN">***ISBN:</label>
-						<input type="text" name="bookISBN" id="bookISBN" placeholder="e.g. 978-1-449-37970-4" class="required" minlength="10"></input>
+						<input type="text" name="bookISBN" id="bookISBN" placeholder="e.g. 978-1-449-37970-4" class="required" minlength="10" data-theme="b"></input>
    					</div>
    					
-   					<div data-role="fieldcontain">
-						<label for="bookGenre">Genre</label>
-						<select name="bookGenre" id="bookGenre" data-native-menu="false">
-							<option data-placeholder="true">Select a Genre</option>
+   					<div data-role="fieldcontain" data-theme="b">
+						<label for="bookGenre" data-theme="c">Genre</label>
+						<select name="bookGenre" id="bookGenre" data-native-menu="false" data-theme="b">
+							<option data-theme="b" data-placeholder="true">Select a Genre</option>
 							<option value="autobiography">autobiography</option>
 							<option value="biography">biography</option>
 							<option value="business finance">business finance</option>
@@ -654,22 +654,22 @@
    					
    					<div data-role="fieldcontain">
     					<label for="dateAdd">Book added to your library:</label>
-    							<input type="date" id="dateAdded" />
+    							<input type="date" id="dateAdded" data-theme="b"/>
     					<label for="datePub">Book published on:</label>
-    							<input type="date" id="dateAdded" />
+    							<input type="date" id="dateAdded" data-theme="b"/>
 					</div>
-   					<div data-role="fieldcontain">
+   					<div data-role="fieldcontain" data-theme="b">
 						<label for="bookRating">Rate the book:</label>
-						<input type="range" name="bookRating" id="bookRating"  value="6" min="0" max="10"/>
+						<input type="range" name="bookRating" id="bookRating"  value="6" min="0" max="10" data-theme="b"/>
    					</div>
-   					<div data-role="fieldcontain">
+   					<div data-role="fieldcontain" data-theme="b">
 						<label for="bookRead">Read book:</label>
 						<select data-role="slider">
 							<option value="on">Read</option>
-							<option value="off">Not Read</option>
+							<option value="off">Not</option>
 						</select>
    					</div>
-   					<div data-role="fieldcontain">
+   					<div data-role="fieldcontain" data-theme="b">
 						<fieldset data-role="controlgroup">
 							<legend>Book ownership</legend>
 								<input type="radio" value="bookBought" name="owned" id="bookBought" checked="checked"/>
@@ -701,7 +701,7 @@
 						<label for="bookFnF">Fiction or Not Fiction:</label>
 						<select data-role="slider">
 							<option value="off">Fiction</option>
-							<option value="on">Not Fiction</option>
+							<option value="on">Not</option>
 						</select>
    					</div>
    					<div data-role="fieldcontain">
@@ -729,9 +729,9 @@
         	</div>
 		</div>
 		
-		<div data-role="dialog" id="bookErrors" data-theme="c">
-			<div data-role="header" data-position="fixed">
-				<h3>Missing Fields</h3>
+		<div data-role="dialog" id="bookErrors" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h3 data-theme="b">Missing Fields</h3>
 			</div>
 			<div data-role="content">
 				<ul>
